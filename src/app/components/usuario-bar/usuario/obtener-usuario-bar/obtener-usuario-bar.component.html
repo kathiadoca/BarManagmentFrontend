@@ -1,0 +1,32 @@
+<div class="card-body">
+    <div class="card-body">
+      <span class="h3">Lista de Usuarios</span>
+      <table class="table table-striped mt-5">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Direccion</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Usuario</th>
+            <th scope="col">Clave</th>
+            <th scope="col">Sede</th>
+            <th scope="col">Rol</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let usuario of user">
+            <td>{{ usuario.Nombre }}</td>
+            <td>{{ usuario.Apellido }}</td>
+            <td>{{ usuario.Direccion }}</td>
+            <td>{{ usuario.Telefono }}</td>
+            <td>{{ usuario.Usuario }}</td>
+            <td>{{ usuario.Clave }}</td>
+            <td>{{ usuario.Sede }}</td>
+            <td>{{ usuario.Rol }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <button type="button" class="btn btn-danger" (click)="navegarAMenu()">Regresar</button>
+  </div>

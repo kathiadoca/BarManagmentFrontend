@@ -1,0 +1,31 @@
+<div class="container">
+    <h1>Actualizar Mesa</h1>
+    <div class="form-group row">
+      <label for="id_Mesa" class="col-sm-2 col-form-label">Ingrese el id de la Mesa:</label>
+      <div class="col-sm-6">
+        <input type="text" id="id_Mesa" name="id_Mesa" class="form-control" required [(ngModel)]="id_Mesa">
+        <button type="button" class="btn btn-warning" (click)="obtenerMesa(id_Mesa)">Buscar</button>
+      </div>
+    </div>
+    <form [formGroup]="crearMesa" class="form" (ngSubmit)="metodoActualizarMesa()">
+      <div class="form-group row">
+        <label for="id_Mesa" class="col-sm-2 col-form-label">Id Mesa:</label>
+        <div class="col-sm-6">
+          <input type="text" id="id_Mesa" name="id_Mesa" class="form-control" required formControlName="id_Mesa">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="Nombre_Mesa" class="col-sm-2 col-form-label">Nombre Mesa:</label>
+        <div class="col-sm-6">
+          <input type="text" id="Nombre_Mesa" name="Nombre_Mesa" class="form-control" required formControlName="Nombre_Mesa">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="offset-sm-2 col-sm-6">
+          <button class="submit" type="submit">Actualizar Mesa</button>
+          <button type="button" class="btn btn-danger" (click)="navegarAMenu()">Regresar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  

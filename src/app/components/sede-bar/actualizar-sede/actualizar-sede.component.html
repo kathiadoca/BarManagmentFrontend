@@ -1,0 +1,31 @@
+<div class="container">
+    <h1>Actualizar Sede</h1>
+    <div class="form-group row">
+      <label for="id_Sede" class="col-sm-2 col-form-label">Ingrese el id de la Sede:</label>
+      <div class="col-sm-6">
+        <input type="text" id="id_Sede" name="id_Sede" class="form-control" required [(ngModel)]="id_Sede">
+        <button type="button" class="btn btn-warning" (click)="obtenerSede(id_Sede)">Buscar</button>
+      </div>
+    </div>
+    <form [formGroup]="crearSede" class="form" (ngSubmit)="metodoActualizarSede()">
+      <div class="form-group row">
+        <label for="id_Sede" class="col-sm-2 col-form-label">Id Sede:</label>
+        <div class="col-sm-6">
+          <input type="text" id="id_Sede" name="id_Sede" class="form-control" required formControlName="id_Sede">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="Nombre_Sede" class="col-sm-2 col-form-label">Nombre Sede:</label>
+        <div class="col-sm-6">
+          <input type="text" id="Nombre_Sede" name="Nombre_Sede" class="form-control" required formControlName="Nombre_Sede">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="offset-sm-2 col-sm-6">
+          <button class="submit" type="submit">Actualizar Usuario</button>
+          <button type="button" class="btn btn-danger" (click)="navegarAMenu()">Regresar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  

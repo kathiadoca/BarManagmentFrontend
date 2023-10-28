@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Eliminar Producto</h1>
+    <div class="form-group">
+      <label for="productoId">ID del Producto:</label>
+      <input type="text" id="id_Producto" name="id_Producto" class="form-control" placeholder="Eliminar Producto" required [(ngModel)]="id_Producto">
+    </div>
+    <button type="button" class="btn btn-danger" (click)="eliminandoProducto(id_Producto)">Eliminar Producto</button>
+    <button type="button" class="btn btn-danger" (click)="navegarAMenu()">Salir</button>
+  </div>
+  

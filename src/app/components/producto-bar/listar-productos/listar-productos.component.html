@@ -1,0 +1,28 @@
+<div class="card-body">
+  <div class="card-body">
+    <span class="h3">Inventario de Productos</span>
+    <table class="table table-striped mt-5">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">ID de Producto</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Costo</th>
+          <th scope="col">Precio de Venta</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Sede</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let producto of productos">
+          <td>{{ producto.id_Producto }}</td>
+          <td>{{ producto.Nombre }}</td>
+          <td>{{ producto.Costo }}</td>
+          <td>{{ producto.Precio_venta }}</td>
+          <td>{{ producto.Cantidad }}</td>
+          <td>{{ producto.Sede }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <button type="button" class="btn btn-danger" (click)="navegarAMenu()">Regresar</button>
+</div>

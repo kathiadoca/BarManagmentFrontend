@@ -1,0 +1,20 @@
+<div class="card-body">
+    <div class="card-body">
+      <span class="h3">Mesa</span>
+      <table class="table table-striped mt-5">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">ID de Mesa</th>
+            <th scope="col">Nombre Mesa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let mesa of mesas">
+            <td>{{ mesa.id_Mesa }}</td>
+            <td>{{ mesa.Nombre_Mesa }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <button type="button" class="btn btn-danger" (click)="navegarAMenu()">Regresar</button>
+  </div>

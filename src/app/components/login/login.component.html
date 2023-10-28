@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="top"></div>
+    <div class="bottom"></div>
+    <div class="center">
+      <h2>Login</h2>
+      <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)">
+        <input type="Usuario" placeholder="Usuario" formControlName="Usuario"/>
+        <input type="Clave" placeholder="Clave" formControlName="Clave"/>
+        <div class="button-container">
+          <button class="submit" value="Log In">Iniciar sesión</button>
+          <!-- <a routerLink="/signup"><button class="submit">Registrar</button></a> -->
+        </div>
+      </form>
+      <h2 *ngIf="loginError" class="error">{{ loginError }}</h2>
+      <h2>&nbsp;</h2>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Eliminar Mesa</h1>
+    <div class="form-group">
+      <label for="productoId">Id de la Mesa:</label>
+      <input type="text" id="id_Mesa" name="id_Mesa" class="form-control" placeholder="Eliminar Mesa" required [(ngModel)]="id_Mesa">
+    </div>
+    <button type="button" class="btn btn-danger" (click)="eliminandoMesa(id_Mesa)">Eliminar Mesa</button>
+    <button type="button" class="btn btn-danger" (click)="navegarAMenu()">Salir</button>
+  </div>
+  

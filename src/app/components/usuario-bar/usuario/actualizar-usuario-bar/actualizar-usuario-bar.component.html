@@ -1,0 +1,67 @@
+<div class="container">
+    <h1>Actualizar Usuario</h1>
+    <div class="form-group row">
+      <label for="Usuario" class="col-sm-2 col-form-label">Ingrese El Usuario:</label>
+      <div class="col-sm-6">
+        <input type="text" id="Usuario" name="Usuario" class="form-control" required [(ngModel)]="Usuario">
+        <button type="button" class="btn btn-warning" (click)="obtenerUsuario(Usuario)">Buscar</button>
+      </div>
+    </div>
+    <form [formGroup]="crearUsuario" class="form" (ngSubmit)="metodoActualizarUsuario()">
+      <div class="form-group row">
+        <label for="Nombre" class="col-sm-2 col-form-label">Nombre:</label>
+        <div class="col-sm-6">
+          <input type="text" id="Nombre" name="Nombre" class="form-control" required formControlName="Nombre">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="Apellido" class="col-sm-2 col-form-label">Apellido:</label>
+        <div class="col-sm-6">
+          <input type="text" id="Apellido" name="Apellido" class="form-control" required formControlName="Apellido">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="Telefono" class="col-sm-2 col-form-label">Telefono:</label>
+        <div class="col-sm-6">
+          <input type="text" id="Telefono" name="Telefono" class="form-control" required formControlName="Telefono">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="Direccion" class="col-sm-2 col-form-label">Direccion:</label>
+        <div class="col-sm-6">
+          <input type="text" id="Direccion" name="Direccion" class="form-control" required formControlName="Direccion">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="Usuario" class="col-sm-2 col-form-label">Usuario:</label>
+        <div class="col-sm-6">
+          <input type="text" id="Usuario" name="Usuario" class="form-control" required formControlName="Usuario">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="Clave" class="col-sm-2 col-form-label">Clave:</label>
+        <div class="col-sm-6">
+          <input type="text" id="Clave" name="Clave" class="form-control"  required formControlName="Clave">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="Sede" class="col-sm-2 col-form-label">Sede:</label>
+        <div class="col-sm-6">
+          <input type="text" id="Sede" name="Sede" class="form-control" required formControlName="Sede">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="Rol" class="col-sm-2 col-form-label">Rol:</label>
+        <div class="col-sm-6">
+          <input type="text" id="Rol" name="Rol" class="form-control" required formControlName="Rol">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="offset-sm-2 col-sm-6">
+          <button class="submit" type="submit">Actualizar Usuario</button>
+          <button type="button" class="btn btn-danger" (click)="navegarAMenu()">Regresar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  

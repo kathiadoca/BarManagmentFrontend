@@ -1,0 +1,44 @@
+<div class="container">
+  <h1>Rol - Administrador</h1>
+  <div class="sections">
+    <section>
+      <h2>Productos</h2>
+      <button type="button" class="btn btn-primary"(click)="navegarAListarProductos()">Listar</button>
+      <button (click)="navegarACrearProducto()">Crear</button>
+      <button (click)="navegarAActualizarProducto()">Actualizar</button>
+      <button (click)="navegarEliminarProducto()">Eliminar</button>
+    </section>
+    <section>
+      <h2>Usuarios</h2>
+      <button (click)="navegarObtenerUsuarios()">Listar</button>
+      <button (click)="navegarCrearUsuario()">Crear</button>
+      <button (click)="navegarActualizarUsuarios()">Actualizar</button>
+      <button (click)="navegarEliminarUsuario()">Eliminar</button>
+    </section>
+    <section>
+      <h2>Sedes</h2>
+      <button (click)="navegarObtenerSedes()">Listar</button>
+      <button (click)="navegarCrearSede()">Crear</button>
+      <button (click)="navegarActualizarSede()">Actualizar</button>
+      <button (click)="navegarEliminarSede()">Eliminar</button>
+    </section>
+    <section>
+      <h2>Mesas</h2>
+      <button (click)="navegarListarMesa()">Listar</button>
+      <button (click)="navegarCrearMesa()">Crear</button>
+      <button (click)="navegarActualizarMesa()">Actualizar</button>
+      <button (click)="navegarEliminarMesa()">Eliminar</button>
+    </section>
+    <section>
+      <h2>Reportes</h2>
+      <button routerLink="/admin/reportes">Acceder Reportes</button>
+    </section>
+  </div>
+  <div class="sections1">
+    <section>
+      <button routerLink="/admin/mesero">Rol Mesero</button>
+      <button routerLink="/admin/cajero">Rol Cajero</button>
+      <button class="salir" routerLink="/login">Salir</button>
+    </section>
+  </div>
+</div>

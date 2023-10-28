@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>Eliminar Usuario</h1>
+    <div class="form-group">
+        <label for="productoId">Usuario A Eliminar:</label>
+        <input type="text" id="usuario" name="usuario" class="form-control" required [(ngModel)]="usuario">
+    </div>
+    <button type="button" class="btn btn-danger" (click)="eliminandoUsuario(usuario)">Eliminar Usuario</button>
+    <button type="button" class="btn btn-danger" (click)="navegarAMenu()">Salir</button>
+</div>
